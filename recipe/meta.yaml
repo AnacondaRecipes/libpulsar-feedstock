@@ -62,5 +62,10 @@ about:
   doc_url: https://pulsar.apache.org/docs/3.0.x/client-libraries
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/70829
+    reason: Dependency for chromadb
+  recipe-maintainers:
+    - ianaobi
   recipe-maintainers:
     - xhochy
