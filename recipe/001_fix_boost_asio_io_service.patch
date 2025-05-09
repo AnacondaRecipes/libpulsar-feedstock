@@ -1,15 +1,6 @@
 --- a/lib/ClientConnection.h
 +++ b/lib/ClientConnection.h
-@@ -31,7 +31,8 @@
- #include <boost/algorithm/string.hpp>
- #include <boost/asio/buffer.hpp>
+@@ -34,7 +34,7 @@
 -#include <boost/asio/io_service.hpp>
 +#include <boost/asio/io_context.hpp>
- #include <boost/asio/ip/tcp.hpp>
- #include <boost/asio/read.hpp>
- #include <boost/asio/steady_timer.hpp>
- #include <boost/asio/write.hpp>
-@@ -XXX,XXX +XXX,XXX @@
--    boost::asio::io_service ioService_;
-+    boost::asio::io_context ioService_;
 
