@@ -30,6 +30,7 @@ requirements:
     - sed     # [not win]
     - m2-sed  # [win]
     - libprotobuf  # [build_platform != target_platform]
+    - boost-cpp <1.70
   host:
     - dlfcn-win32  # [win]
     - gmock
