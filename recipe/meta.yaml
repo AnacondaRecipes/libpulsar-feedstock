@@ -30,12 +30,13 @@ requirements:
     - sed     # [not win]
     - m2-sed  # [win]
     - libprotobuf  # [build_platform != target_platform]
-    - boost-cpp <1.70
+    - boost-cpp <1.87
   host:
     - dlfcn-win32  # [win]
     - gmock
     - gtest
-    - libboost-headers
+    #- libboost-headers
+    - boost-cpp <1.87
     # windows build needs to find CMake metadata
     - libboost-devel  # [win]
     - libcurl
