@@ -1,6 +1,5 @@
 --- a/lib/ClientConnection.h
 +++ b/lib/ClientConnection.h
-@@ -34,7 +34,7 @@
 @@ -31,7 +31,7 @@
  #include <asio/strand.hpp>
  #else
