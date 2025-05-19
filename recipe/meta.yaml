@@ -24,18 +24,19 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - ninja
     - sed     # [not win]
     - m2-sed  # [win]
     - libprotobuf  # [build_platform != target_platform]
+    - boost-cpp <1.87
   host:
     - dlfcn-win32  # [win]
     - gmock
     - gtest
-    - libboost-headers
+    #- libboost-headers
+    - boost-cpp <1.87
     # windows build needs to find CMake metadata
     - libboost-devel  # [win]
     - libcurl
@@ -62,5 +63,10 @@ about:
   doc_url: https://pulsar.apache.org/docs/3.0.x/client-libraries
 
 extra:
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/70829
+    reason: Dependency for chromadb
+  recipe-maintainers:
+    - ianaobi
   recipe-maintainers:
     - xhochy
